@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4efe8;
+  color: #2e2e2e;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  background: #3f2d20;
+  color: white;
+  padding: 24px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.sidebar p {
+  margin-top: 8px;
+  color: #e5d3bd;
+}
+
+.sidebar nav {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar button {
+  padding: 13px;
+  border-radius: 10px;
+  text-align: left;
+  background: transparent;
+  color: white;
+}
+
+.sidebar button:hover {
+  background: #8b5e34;
+}
+
+.contenido {
+  flex: 1;
+  padding: 28px;
+}
+
+.header {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e1d4c2;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #3f2d20;
+}
+
+.header p {
+  margin: 6px 0 0;
+  color: #6f6f6f;
+}
+
+.rol {
+  background: #eadcc9;
+  color: #3f2d20;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid #e1d4c2;
+}
+
+.card p {
+  margin: 0;
+  color: #6f6f6f;
+}
+
+.card strong {
+  display: block;
+  margin-top: 12px;
+  font-size: 32px;
+  color: #3f2d20;
+}
+
+.card.alerta {
+  background: #fff2f2;
+  border-color: #df9b9b;
+}
+
+.panel {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 20px;
+  border: 1px solid #e1d4c2;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #3f2d20;
+}
+
+.panel p {
+  font-weight: bold;
+  color: #3f2d20;
+  background: #f7efe3;
+  padding: 14px;
+  border-left: 5px solid #d8a75b;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
