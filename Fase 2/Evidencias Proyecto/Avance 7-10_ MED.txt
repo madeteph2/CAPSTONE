@@ -1,0 +1,45 @@
+Se integran los avances iniciales correspondientes a la base técnica del proyecto **Sistema Integral de Gestión para Banquetería**.
+
+Se incorpora la estructura inicial del proyecto, el frontend base desarrollado con React/Vite y el script de base de datos PostgreSQL necesario para comenzar el desarrollo de los módulos principales del sistema.
+
+Cambios realizados
+- Se crea y organiza la estructura principal del proyecto:
+  - `frontend/`
+  - `backend/`
+  - `database/`
+  - `docs/`
+
+- Se implementa el frontend inicial del sistema utilizando React con Vite.
+- Se crea una primera vista del backoffice web con:
+  - menú lateral,
+  - dashboard inicial,
+  - tarjetas informativas,
+  - flujo principal del sistema,
+  - secciones base para clientes, pedidos, cotizador e inventario.
+
+- Se agrega el script SQL de base de datos PostgreSQL:
+  - creación de tablas principales,
+  - tablas auxiliares,
+  - relaciones entre entidades,
+  - datos iniciales de prueba.
+
+- Se deja preparada la base técnica para avanzar posteriormente con:
+  - conexión frontend-backend,
+  - API REST,
+  - módulos de clientes,
+  - eventos,
+  - pedidos,
+  - inventario,
+  - cotización,
+  - ventas y auditoría.
+
+Evidencia del avance
+- Frontend ejecutándose correctamente en entorno local mediante `npm run dev`.
+- Base de datos `sig_banqueteria` creada en PostgreSQL.
+- Tablas verificadas correctamente mediante `\dt`.
+- Script SQL corregido y guardado en codificación UTF-8.
+
+Observaciones
+Este avance corresponde a una primera versión base del sistema.  
+El frontend utiliza por ahora datos visuales/prototipo y la conexión con servicios/backend será incorporada en una etapa posterior.
+
