@@ -1,0 +1,169 @@
+/* W02 Dashboard: clases prefijadas para evitar conflictos con futuras vistas. */
+.w02-layout{display:flex;min-height:100vh;background:#f8f4ef;color:#172033;font-family:Arial,Helvetica,sans-serif}
+.w02-layout *{box-sizing:border-box}
+.w02-sidebar{width:250px;flex:0 0 250px;background:linear-gradient(180deg,#32180d,#6a3519);color:#fff;padding:20px 14px;display:flex;flex-direction:column}
+.w02-brand{display:flex;align-items:center;gap:12px;padding:0 8px 20px;border-bottom:1px solid #ffffff30;margin-bottom:18px}
+.w02-brand-icon{font-size:29px}.w02-brand strong{display:block;font-size:18px}.w02-brand small{display:block;font-size:11px;color:#ead7c8;margin-top:5px}
+.w02-sidebar nav{display:flex;flex-direction:column;gap:4px}
+.w02-nav-item{background:transparent;color:#fff;border:0;border-radius:8px;padding:12px;text-align:left;cursor:pointer;font-size:14px;font-weight:600;display:flex;align-items:center;gap:12px}
+.w02-nav-item span{width:23px;text-align:center;font-size:17px}.w02-nav-item:hover,.w02-nav-item.active{background:#87461f}
+.w02-sidebar-footer{margin-top:auto;padding:22px 12px 0;color:#dbc6b8;font-size:12px}
+.w02-main{flex:1;min-width:0}
+.w02-top{height:65px;background:#fff;border-bottom:1px solid #eee;display:flex;align-items:center;justify-content:space-between;padding:0 26px;gap:20px}
+.w02-top-title{font-size:14px;color:#667085}.w02-user{display:flex;align-items:center;gap:10px;font-weight:700;font-size:13px}.w02-user small{display:block;color:#667085;font-size:11px;font-weight:400;margin-top:4px}
+.w02-avatar{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#b97850;color:#fff}
+.w02-content{padding:25px;max-width:1650px;margin:auto}
+.w02-breadcrumb{font-size:12px;color:#667085;margin-bottom:10px}.w02-intro{margin-bottom:22px}
+.w02-intro h1{font-size:30px!important;line-height:1.2!important;letter-spacing:normal!important;color:#542711!important;margin:0 0 6px!important;font-weight:700!important}
+.w02-intro p{color:#667085;font-size:14px;margin:0}
+.w02-card{background:#fff;border:1px solid #ece5df;border-radius:11px;box-shadow:0 2px 8px #2c180c08;min-width:0}
+.w02-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:18px}
+.w02-metric{padding:19px;display:flex;justify-content:space-between;gap:8px}
+.w02-metric span{display:block;font-size:13px;color:#667085}.w02-metric strong{display:block;font-size:29px;color:#32180d;margin:10px 0}
+.w02-metric small{font-size:11px;color:#667085}.w02-metric-icon{flex-shrink:0;display:grid;place-items:center;width:42px;height:42px;border-radius:9px;background:#f1e5dc;color:#71300f;font-size:22px}
+.w02-grid-primary,.w02-grid-secondary{display:grid;gap:18px;margin-bottom:18px}
+.w02-grid-primary{grid-template-columns:minmax(0,2fr) minmax(290px,1fr)}
+.w02-grid-secondary{grid-template-columns:minmax(0,1.4fr) minmax(290px,1fr)}
+.w02-section{padding:19px}.w02-section h2{font-size:17px!important;line-height:1.3!important;font-weight:700!important;color:#542711!important;margin:0 0 17px!important;letter-spacing:normal!important}
+.w02-section-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.w02-section-head span{font-size:11px;color:#667085}
+.w02-table-scroll{overflow-x:auto}.w02-section table{border-collapse:collapse;width:100%;text-align:left;font-size:13px}
+.w02-section th{background:#faf8f6;color:#475467;font-size:12px;padding:13px 10px;white-space:nowrap}
+.w02-section td{border-top:1px solid #eee;padding:13px 10px;white-space:nowrap}
+.w02-note{font-size:11px;color:#667085;line-height:1.5;margin-top:15px}
+.w02-alert{display:flex;gap:12px;padding:14px;border:1px solid #eee;border-left:4px solid #b97850;border-radius:8px;margin-bottom:10px}
+.w02-alert>span{font-size:21px;color:#7b3511}.w02-alert strong{font-size:13px}.w02-alert p{font-size:12px;color:#667085;margin:5px 0 0;line-height:1.5}
+.w02-empty{background:#faf8f6;border:1px dashed #d8c5b6;border-radius:8px;padding:25px;color:#667085;font-size:13px;line-height:1.6}
+.w02-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eee;padding:12px 0;font-size:13px}
+.w02-line:last-child{border-bottom:0}.w02-line strong{color:#542711}
+.w02-message{background:#fff4db;border:1px solid #ead49d;padding:12px 16px;border-radius:8px;margin-bottom:15px;font-size:13px}
+.w02-message button{margin-left:8px;background:transparent;text-decoration:underline;border:0;cursor:pointer}
+.w02-error{background:#fff1f1;border-color:#f2b6b6;color:#9a1c1c}
+.w02-dev-warning{color:#667085;font-size:11px;margin:22px 0}
+@media(max-width:1150px){.w02-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.w02-grid-primary,.w02-grid-secondary{grid-template-columns:1fr}}
+@media(max-width:760px){.w02-layout{display:block}.w02-sidebar{width:100%;padding:14px;min-height:0}.w02-sidebar nav{flex-direction:row;flex-wrap:wrap}.w02-nav-item{padding:9px}.w02-sidebar-footer{display:none}.w02-top{padding:0 16px}.w02-content{padding:16px}.w02-metrics{grid-template-columns:1fr}.w02-intro h1{font-size:25px!important}.w02-section-head{display:block}.w02-section-head span{display:block;margin-bottom:12px}}
+
+/* W03 Clientes */
+.w03-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.w03-primary{border:0;border-radius:8px;background:#7b3511;color:white;padding:12px 18px;font-weight:700;cursor:pointer}
+.w03-primary:disabled{opacity:.55;cursor:not-allowed}
+.w03-filters{padding:18px;display:grid;grid-template-columns:minmax(0,2fr) minmax(200px,1fr);gap:16px;margin-bottom:18px}
+.w03-filters label{display:flex;flex-direction:column;gap:8px;color:#667085;font-size:12px}
+.w03-filters input,.w03-filters select{border:1px solid #d5d5d5;border-radius:7px;padding:12px;background:white;color:#172033;width:100%;font:inherit;font-size:14px;min-width:0}
+.w03-columns{display:grid;grid-template-columns:minmax(0,2fr) minmax(290px,1fr);gap:18px}
+.w03-section-title{display:flex;align-items:baseline;justify-content:space-between;gap:10px}.w03-section-title span{font-size:11px;color:#667085}
+.w03-name{display:flex;align-items:center;gap:10px}.w03-initials{width:33px;height:33px;flex:0 0 33px;display:grid;place-items:center;background:#ead7c9;color:#69351c;border-radius:50%;font-weight:700}
+.w03-initials.large{width:52px;height:52px;flex-basis:52px}
+.w03-status{border-radius:20px;padding:5px 10px;font-size:12px;white-space:nowrap}.w03-status.on{background:#d9f5df;color:#176b2b}.w03-status.off{background:#eee;color:#555}
+.w03-action{border:1px solid #cba98f;border-radius:6px;padding:7px 10px;background:white;color:#71300f;cursor:pointer}.w03-action:hover{background:#f5e8df}
+.w03-detail-heading{display:flex;gap:12px;align-items:center;margin:20px 0}.w03-detail-heading p{margin:5px 0;color:#667085;font-size:12px}
+.w03-detail dl{margin:0}.w03-detail dl>div{margin-bottom:15px}.w03-detail dt{font-size:12px;color:#667085}.w03-detail dd{font-size:14px;margin:5px 0 0;overflow-wrap:anywhere}.w03-hint{color:#667085;font-size:13px;line-height:1.6}
+@media(max-width:1200px){.w03-columns{grid-template-columns:1fr}}@media(max-width:650px){.w03-filters{grid-template-columns:1fr}}
+
+/* W04 Formulario de cliente */
+.w04-header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.w04-badge{font-size:12px;color:#85451f;background:#f6e7db;border:1px solid #e9cdb9;padding:8px 12px;border-radius:20px}
+.w04-section{padding:24px;margin-bottom:18px}
+.w04-section h2{font-size:17px!important;color:#542711!important;font-weight:700!important;margin:0 0 20px!important;padding-bottom:13px;border-bottom:1px solid #eee;letter-spacing:normal!important}
+.w04-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.w04-field{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600;color:#334155;min-width:0}
+.w04-field input,.w04-field select,.w04-field textarea{font:inherit;font-size:14px;color:#172033;background:#fff;border:1px solid #d8dde6;border-radius:7px;padding:12px;width:100%;min-width:0}
+.w04-field input:focus,.w04-field select:focus,.w04-field textarea:focus{outline:2px solid #bb8a6c;outline-offset:1px}
+.w04-field input[aria-invalid="true"]{border-color:#b42318}
+.w04-field small{font-size:11px;font-weight:400;color:#667085}
+.w04-field .w04-error,.w04-required{color:#b42318}
+.w04-full{grid-column:1/-1}
+.w04-actions{display:flex;justify-content:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.w04-secondary{background:#fff;color:#542711;border:1px solid #bfa18c;padding:12px 18px;border-radius:8px;cursor:pointer;font-weight:700}
+.w04-success{padding:15px;border-radius:8px;background:#e7f7eb;color:#185a2b;margin-bottom:18px;font-size:13px;line-height:1.5}
+.w04-table-actions{display:flex;gap:7px;flex-wrap:wrap}
+@media(max-width:700px){.w04-grid{grid-template-columns:1fr}.w04-section{padding:16px}}
+
+.w04-login{min-height:100vh;display:grid;place-items:center;background:#f8f4ef;color:#32180d;font-family:Arial,sans-serif;padding:20px}
+.w04-login form{width:min(100%,420px);background:white;border-radius:12px;padding:30px;box-shadow:0 4px 25px #0001;display:grid;gap:14px}
+.w04-login h1{font-size:25px!important;margin:0!important}.w04-login h2{font-size:18px!important;margin:0!important}
+.w04-login p{font-size:13px;color:#667085}.w04-login label{display:grid;gap:6px;font-size:13px}
+.w04-login input{padding:11px;border:1px solid #ddd;border-radius:7px}.w04-login button{background:#87461f;color:white;padding:12px;border:0;border-radius:8px;cursor:pointer}
+
+/* W03 - Identificación legal y nombre comercial secundario */
+.w04-alias{display:block;margin-top:3px;color:#667085;font-size:11px;font-weight:400;line-height:1.45}
+
+/* W01 · Adaptación del HTML original, aislada de W02–W04 */
+.w01-page{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;background:#f8f4ef;color:#172033;font-family:Arial,sans-serif}
+.w01-page *{box-sizing:border-box}
+.w01-left{background:linear-gradient(145deg,#32180d,#6a3519);color:white;padding:48px 58px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;min-height:100vh}
+.w01-left:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:#ffffff08;right:-160px;top:-120px;pointer-events:none}
+.w01-brand{display:flex;align-items:center;gap:15px;position:relative;z-index:1}
+.w01-logo{width:62px;height:62px;border-radius:16px;background:#fff;color:#603018;display:grid;place-items:center;font-size:30px}
+.w01-brand strong{display:block;font-size:24px;line-height:1.3}.w01-brand small{display:block;font-size:13px;color:#f3e9e2;margin-top:3px}
+.w01-hero{max-width:560px;position:relative;z-index:1}.w01-hero h1{font-size:clamp(34px,3.3vw,51px);line-height:1.08;font-weight:750;letter-spacing:-.035em;color:#fff;margin:0 0 20px}.w01-hero p{font-size:17px;line-height:1.7;color:#f3e9e2;margin:0}
+.w01-features{display:flex;gap:25px;flex-wrap:wrap;color:#f3e9e2;font-size:14px;position:relative;z-index:1}
+.w01-right{display:flex;align-items:center;justify-content:center;padding:35px 22px}.w01-box{width:100%;max-width:455px}
+.w01-intro{margin-bottom:24px}.w01-intro>span{font-size:13px;color:#667085}.w01-intro h2{font-size:31px;line-height:1.2;color:#172033;margin:8px 0;font-weight:700}.w01-intro p{font-size:15px;color:#667085;line-height:1.5;margin:0}
+.w01-card{background:#fff;border:1px solid #eee;border-radius:14px;box-shadow:0 12px 35px #32180d14;padding:34px;display:flex;flex-direction:column;gap:10px}
+.w01-card>label{font-weight:600;font-size:14px;color:#172033}.w01-input-wrap{display:flex;align-items:stretch;min-height:48px;border:1px solid #ced4da;border-radius:7px;overflow:hidden;background:white;margin-bottom:10px}
+.w01-input-wrap>span{display:grid;place-items:center;min-width:44px;border-right:1px solid #ced4da;color:#603018;font-size:17px}
+.w01-input-wrap input{min-width:0;flex:1;border:0;outline:0;padding:10px 12px;background:#fff;color:#172033;font-size:14px}
+.w01-input-wrap:focus-within{outline:2px solid #bd8a66;outline-offset:1px}
+.w01-toggle{border:0;border-left:1px solid #ced4da;background:#fff;color:#69402a;padding:0 10px;font-size:12px;cursor:pointer}
+.w01-help{font-size:13px;color:#7b3511;text-align:right;line-height:1.45;margin:0 0 12px}
+.w01-submit{background:#7b3511;color:#fff;border:0;border-radius:7px;min-height:48px;font-size:15px;font-weight:700;cursor:pointer}.w01-submit:hover{background:#3d1d0f}.w01-submit:disabled{opacity:.65;cursor:wait}
+.w01-note{font-size:13px;background:#fbf7f3;border:1px solid #eadfd5;border-radius:8px;padding:12px;color:#69402a;line-height:1.5;margin-top:12px}
+.w01-error{font-size:13px;color:#a51d1d;background:#fff1f1;border:1px solid #efcaca;border-radius:6px;padding:10px;margin:0}
+.w01-footnote{font-size:13px;color:#667085;text-align:center;margin-top:16px}
+.w01-loading{min-height:100vh;display:grid;place-items:center;background:#f8f4ef;color:#32180d}
+@media(max-width:900px){.w01-page{grid-template-columns:1fr}.w01-left{min-height:300px;padding:32px;gap:40px}.w01-hero h1{font-size:34px}.w01-features{display:none}}
+@media(max-width:480px){.w01-left{min-height:270px;padding:24px}.w01-hero h1{font-size:29px}.w01-hero p{font-size:14px}.w01-right{padding:28px 16px}.w01-card{padding:22px}.w01-brand strong{font-size:21px}}
+
+
+/* W05 · Pedidos: diseño original adaptado al layout W02 */
+.w05-heading{margin-bottom:18px}
+.w05-filtros{display:grid;grid-template-columns:minmax(260px,5fr) minmax(170px,3fr) minmax(200px,4fr);gap:16px;padding:18px;margin-bottom:18px}
+.w05-filtros label{display:flex;flex-direction:column;gap:8px;color:#667085;font-size:12px;min-width:0}
+.w05-filtros input,.w05-filtros select{width:100%;min-width:0;border:1px solid #d5d5d5;border-radius:7px;padding:12px;background:#fff;color:#172033;font:inherit;font-size:14px}
+.w05-listado{padding:0;overflow:hidden}
+.w05-listado-cabecera{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px;border-bottom:1px solid #eee;flex-wrap:wrap}
+.w05-listado-cabecera h2{margin:0!important;font-size:17px!important;color:#542711!important}
+.w05-listado-cabecera span{color:#667085;font-size:12px}
+.w05-listado .w02-table-scroll{padding:0 18px}
+.w05-evento{display:block;color:#667085;font-size:12px;margin-top:4px}
+.w05-estado{display:inline-block;border-radius:16px;padding:6px 10px;font-size:12px;font-weight:700;text-transform:capitalize;white-space:nowrap}
+.w05-estado.pendiente{background:#fff0c2;color:#8a5b00}.w05-estado.confirmado{background:#d9f0ff;color:#126090}
+.w05-estado.preparacion{background:#e9ddff;color:#5b2d90}.w05-estado.completado{background:#d9f5df;color:#176b2b}.w05-estado.cancelado{background:#f3d7d7;color:#8b1e1e}
+.w05-listado .w02-note{padding:0 18px}
+.w05-detalle{margin-top:18px;overflow:hidden}
+.w05-detalle dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:18px;margin:0}
+.w05-detalle dt{color:#667085;font-size:12px;margin-bottom:5px}.w05-detalle dd{margin:0;color:#172033;overflow-wrap:anywhere;font-size:14px}
+.w05-heading button:disabled,.w05-listado button:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:950px){.w05-filtros{grid-template-columns:1fr 1fr}.w05-filtros label:first-child{grid-column:1/-1}}
+@media(max-width:600px){.w05-filtros,.w05-detalle dl{grid-template-columns:1fr}.w05-filtros label:first-child{grid-column:auto}}
+
+/* W05: distribución de tabla fiel al prototipo original. Aislada de W01-W04. */
+.w05-listado .w05-table-scroll{padding:0;overflow-x:auto;width:100%}
+.w05-listado .w05-table{width:100%;min-width:900px;border-collapse:collapse;table-layout:fixed;text-align:left;font-size:14px;color:#172033}
+.w05-table .w05-col-id{width:12%}
+.w05-table .w05-col-cliente{width:26%}
+.w05-table .w05-col-fecha{width:17%}
+.w05-table .w05-col-responsable{width:20%}
+.w05-table .w05-col-estado{width:14%}
+.w05-table .w05-col-acciones{width:11%}
+.w05-table thead th{padding:14px 12px;background:#faf8f6;border-bottom:1px solid #dce0e5;color:#172033;font-size:13px;font-weight:700;white-space:nowrap}
+.w05-table tbody td{padding:16px 12px;border-bottom:1px solid #e2e5e9;vertical-align:middle;line-height:1.4;overflow-wrap:break-word}
+.w05-table tbody tr:last-child td{border-bottom:0}
+.w05-table tbody tr:hover{background:#fcfaf8}
+.w05-table tbody td:first-child{white-space:nowrap;font-weight:700}
+.w05-table tbody td:nth-child(2)>strong{display:block;font-size:14px}
+.w05-table tbody td:nth-child(3){white-space:nowrap}
+.w05-table th:nth-child(5),.w05-table td:nth-child(5),.w05-table th:nth-child(6),.w05-table td:nth-child(6){text-align:center}
+.w05-table .w05-estado{font-size:12px;padding:5px 9px;font-weight:600;text-transform:none}
+.w05-table-actions{display:flex;justify-content:center;align-items:center;gap:10px;white-space:nowrap}
+.w05-icon-button{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:5px;background:transparent;border:1px solid transparent;border-radius:5px;color:#7b3511;cursor:pointer}
+.w05-icon-button svg{width:18px;height:18px;flex-shrink:0}
+.w05-icon-button:hover:not(:disabled),.w05-icon-button:focus-visible{background:#f6e8dd;border-color:#d6b59f}
+.w05-icon-button:disabled{opacity:.35;cursor:not-allowed}
+.w05-table .w05-evento{font-size:12px;margin-top:3px}
+@media(max-width:1100px){.w05-listado .w05-table{min-width:950px}}
+
+/* W05 · Formulario de creación y edición */
+.w05-formulario{max-width:1200px;margin:0 auto}
+.w05-formulario .w04-section{margin-bottom:18px}
+.w05-formulario .w04-field textarea{resize:vertical}
