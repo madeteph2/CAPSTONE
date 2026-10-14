@@ -5,3 +5,5 @@ build/
 *.log
 .DS_Store
 .vscode/
+# Archivos de respaldo
+*.bak
