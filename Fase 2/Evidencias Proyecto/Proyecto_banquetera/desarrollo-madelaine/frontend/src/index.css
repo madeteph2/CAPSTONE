@@ -1,0 +1,33 @@
+/* Estilos globales mínimos para Banquetería Maya.
+   Los componentes y colores del dashboard se definen en App.css. */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f4efe8;
+  color: #2e2e2e;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
