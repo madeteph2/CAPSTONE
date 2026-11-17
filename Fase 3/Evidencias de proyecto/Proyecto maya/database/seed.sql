@@ -1,0 +1,2 @@
+-- Datos iniciales de prueba
+-- Aquí se insertarán roles, usuarios, clientes e insumos de prueba.

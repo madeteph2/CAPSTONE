@@ -1,0 +1,103 @@
+"""Asistencia de IA opcional en MICA: explica propuestas; NO calcula precios.
+
+Soporta Groq (incluyendo GPT-OSS) y OpenAI API (GPT). El motor de
+cálculo y la persistencia de pedidos funcionan sin conexión a un LLM.
+Solo se envían al proveedor resumen de propuestas/precios comerciales.
+"""
+import json
+import logging
+import os
+import urllib.request
+from urllib.error import HTTPError, URLError
+
+logger = logging.getLogger(__name__)
+
+PROMPT = (
+    'Eres un asistente de cotización de Banquetería Maya. '
+    'Explica en español claro y en dos frases breves las alternativas que YA '
+    'calculó el servidor. Solo puedes usar las preparaciones y precios recibidos. '
+    'No inventes ingredientes, descuentos, plazos, disponibilidad ni garantías. '
+    'No modifiques precios ni hagas promesas de contratación. '
+    'Los precios son preliminares y requieren aprobación humana.'
+)
+
+
+def _reglas(resumen):
+    opcion = next((x for x in resumen if x['dentro_presupuesto']), None)
+    if opcion:
+        mensaje = f"Alternativa dentro del presupuesto: {opcion['nombre']}. "
+        mensaje += 'La propuesta debe ser revisada y confirmada por el personal.'
+    else:
+        mensaje = ('Ninguna alternativa está dentro del presupuesto indicado. '
+                   'Considere ajustar presupuesto o preparación y consulte al personal.')
+    return {'modo': 'reglas', 'mensaje': mensaje,
+            'proveedor_activo': False, 'proveedor': 'reglas', 'modelo': None}
+
+
+def explicar(propuestas):
+    resumen = [{
+        'nombre': p.nombre,
+        'preparacion': p.detalle['preparacion'],
+        'precio_total': str(p.precio_total),
+        'dentro_presupuesto': bool(p.dentro_presupuesto),
+    } for p in propuestas]
+    respaldo = _reglas(resumen)
+    proveedor = os.getenv('MICA_IA_PROVEEDOR', 'groq').strip().lower() or 'groq'
+    if proveedor == 'reglas' or not resumen:
+        return respaldo
+    if proveedor == 'groq':
+        clave = os.getenv('GROQ_API_KEY', '').strip()
+        modelo = os.getenv('GROQ_MODEL', '').strip()
+        url = 'https://api.groq.com/openai/v1/chat/completions'
+        cuerpo = {
+            'model': modelo, 'temperature': 0, 'max_tokens': 300,
+            'messages': [
+                {'role': 'system', 'content': PROMPT},
+                {'role': 'user', 'content': json.dumps(resumen, ensure_ascii=False)},
+            ],
+        }
+    elif proveedor == 'openai':
+        clave = os.getenv('OPENAI_API_KEY', '').strip()
+        modelo = os.getenv('OPENAI_MODEL', 'gpt-5.4-mini').strip()
+        url = 'https://api.openai.com/v1/responses'
+        cuerpo = {
+            'model': modelo,
+            'instructions': PROMPT,
+            'input': json.dumps(resumen, ensure_ascii=False),
+            'store': False,
+            'max_output_tokens': 450,
+            'reasoning': {'effort': 'none'},
+        }
+    else:
+        return respaldo
+
+    if not clave or not modelo:
+        return respaldo
+
+    try:
+        solicitud = urllib.request.Request(
+            url, data=json.dumps(cuerpo).encode('utf-8'),
+            headers={'Authorization': 'Bearer ' + clave,
+                     'Content-Type': 'application/json'}, method='POST')
+        with urllib.request.urlopen(solicitud, timeout=12) as respuesta:
+            salida = json.load(respuesta)
+        if proveedor == 'groq':
+            mensaje = salida['choices'][0]['message']['content']
+        else:
+            # Responses API: el texto llega en output[].content[].text
+            mensaje = '\n'.join(
+                parte.get('text', '')
+                for item in salida.get('output', [])
+                if item.get('type') == 'message'
+                for parte in item.get('content', [])
+                if parte.get('type') == 'output_text'
+            )
+        if not isinstance(mensaje, str) or not mensaje.strip():
+            raise ValueError('El proveedor no devolvió texto utilizable')
+        return {'modo': 'ia', 'mensaje': mensaje.strip()[:900],
+                'proveedor_activo': True, 'proveedor': proveedor, 'modelo': modelo}
+    except (KeyError, IndexError, TypeError, ValueError, URLError, HTTPError,
+            TimeoutError, OSError):
+        # No mostrar tokens, cuerpos privados ni mensajes de proveedor al visitante.
+        logger.warning('MICA: asistencia remota no disponible (%s); se usan reglas.', proveedor)
+        return respaldo
