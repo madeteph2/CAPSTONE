@@ -1,0 +1,1630 @@
+{
+  "version": 1,
+  "proyecto": "Banquetería Maya",
+  "moneda": "CLP",
+  "criterio": "Precios de ejemplo por unidad de compra; sin mano de obra, impuestos ni gastos operativos. Precio y margen quedan en cero (pendientes). Agua de cocción sin costear. Cantidades para 30 comensales.",
+  "insumos": [
+    {
+      "nombre_insumo": "Filete de pechuga de pollo",
+      "unidad": "kg",
+      "costo_unitario": 4500
+    },
+    {
+      "nombre_insumo": "Papas",
+      "unidad": "kg",
+      "costo_unitario": 1000
+    },
+    {
+      "nombre_insumo": "Leche",
+      "unidad": "lt",
+      "costo_unitario": 1100
+    },
+    {
+      "nombre_insumo": "Mantequilla",
+      "unidad": "kg",
+      "costo_unitario": 9000
+    },
+    {
+      "nombre_insumo": "Aceite",
+      "unidad": "lt",
+      "costo_unitario": 2000
+    },
+    {
+      "nombre_insumo": "Ajo",
+      "unidad": "kg",
+      "costo_unitario": 5000
+    },
+    {
+      "nombre_insumo": "Sal",
+      "unidad": "kg",
+      "costo_unitario": 600
+    },
+    {
+      "nombre_insumo": "Pimienta molida",
+      "unidad": "kg",
+      "costo_unitario": 12000
+    },
+    {
+      "nombre_insumo": "Orégano seco",
+      "unidad": "kg",
+      "costo_unitario": 10000
+    },
+    {
+      "nombre_insumo": "Arroz",
+      "unidad": "kg",
+      "costo_unitario": 1200
+    },
+    {
+      "nombre_insumo": "Presa de pollo con hueso",
+      "unidad": "kg",
+      "costo_unitario": 4500
+    },
+    {
+      "nombre_insumo": "Cebolla",
+      "unidad": "kg",
+      "costo_unitario": 1000
+    },
+    {
+      "nombre_insumo": "Zanahoria",
+      "unidad": "kg",
+      "costo_unitario": 950
+    },
+    {
+      "nombre_insumo": "Tomate",
+      "unidad": "kg",
+      "costo_unitario": 1600
+    },
+    {
+      "nombre_insumo": "Posta de vacuno",
+      "unidad": "kg",
+      "costo_unitario": 8500
+    },
+    {
+      "nombre_insumo": "Pulpa de cerdo",
+      "unidad": "kg",
+      "costo_unitario": 5200
+    },
+    {
+      "nombre_insumo": "Lentejas secas",
+      "unidad": "kg",
+      "costo_unitario": 2200
+    },
+    {
+      "nombre_insumo": "Zapallo camote",
+      "unidad": "kg",
+      "costo_unitario": 1300
+    },
+    {
+      "nombre_insumo": "Espirales secos",
+      "unidad": "kg",
+      "costo_unitario": 1800
+    },
+    {
+      "nombre_insumo": "Salsa de tomate",
+      "unidad": "kg",
+      "costo_unitario": 2200
+    },
+    {
+      "nombre_insumo": "Champiñones",
+      "unidad": "kg",
+      "costo_unitario": 4800
+    },
+    {
+      "nombre_insumo": "Crema de leche",
+      "unidad": "lt",
+      "costo_unitario": 4500
+    },
+    {
+      "nombre_insumo": "Porotos blancos secos",
+      "unidad": "kg",
+      "costo_unitario": 2800
+    },
+    {
+      "nombre_insumo": "Choclo desgranado",
+      "unidad": "kg",
+      "costo_unitario": 2300
+    },
+    {
+      "nombre_insumo": "Cilantro",
+      "unidad": "kg",
+      "costo_unitario": 6500
+    },
+    {
+      "nombre_insumo": "Jugo de limón",
+      "unidad": "lt",
+      "costo_unitario": 3000
+    },
+    {
+      "nombre_insumo": "Repollo morado",
+      "unidad": "kg",
+      "costo_unitario": 1200
+    },
+    {
+      "nombre_insumo": "Betarraga",
+      "unidad": "kg",
+      "costo_unitario": 1200
+    },
+    {
+      "nombre_insumo": "Garbanzos secos",
+      "unidad": "kg",
+      "costo_unitario": 2400
+    },
+    {
+      "nombre_insumo": "Pepino",
+      "unidad": "kg",
+      "costo_unitario": 1400
+    },
+    {
+      "nombre_insumo": "Manzana",
+      "unidad": "kg",
+      "costo_unitario": 1600
+    },
+    {
+      "nombre_insumo": "Azúcar",
+      "unidad": "kg",
+      "costo_unitario": 1300
+    },
+    {
+      "nombre_insumo": "Canela molida",
+      "unidad": "kg",
+      "costo_unitario": 14000
+    },
+    {
+      "nombre_insumo": "Avena laminada",
+      "unidad": "kg",
+      "costo_unitario": 2200
+    },
+    {
+      "nombre_insumo": "Harina de trigo",
+      "unidad": "kg",
+      "costo_unitario": 1100
+    },
+    {
+      "nombre_insumo": "Huevo",
+      "unidad": "unidades",
+      "costo_unitario": 230
+    },
+    {
+      "nombre_insumo": "Esencia de vainilla",
+      "unidad": "lt",
+      "costo_unitario": 8000
+    },
+    {
+      "nombre_insumo": "Maicena",
+      "unidad": "kg",
+      "costo_unitario": 3200
+    },
+    {
+      "nombre_insumo": "Cacao amargo",
+      "unidad": "kg",
+      "costo_unitario": 10000
+    },
+    {
+      "nombre_insumo": "Pera",
+      "unidad": "kg",
+      "costo_unitario": 1700
+    }
+  ],
+  "fichas": [
+    {
+      "codigo": "FT-001",
+      "nombre_ficha": "Puré de papas con filete de pollo a la plancha",
+      "tipo_preparacion": "plato_fondo",
+      "descripcion": "Un filete de 200 g crudo y 250–280 g de puré preparado.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 39788.0,
+      "costo_insumos_por_porcion": 1326.27,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Filete de pechuga de pollo",
+          "cantidad": 6.0,
+          "unidad": "kg",
+          "costo_unitario": 4500,
+          "costo_total": 27000.0
+        },
+        {
+          "insumo": "Papas",
+          "cantidad": 8.0,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 8000.0
+        },
+        {
+          "insumo": "Leche",
+          "cantidad": 1.2,
+          "unidad": "lt",
+          "costo_unitario": 1100,
+          "costo_total": 1320.0
+        },
+        {
+          "insumo": "Mantequilla",
+          "cantidad": 0.3,
+          "unidad": "kg",
+          "costo_unitario": 9000,
+          "costo_total": 2700.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.15,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Ajo",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 5000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        },
+        {
+          "insumo": "Pimienta molida",
+          "cantidad": 0.006,
+          "unidad": "kg",
+          "costo_unitario": 12000,
+          "costo_total": 72.0
+        },
+        {
+          "insumo": "Orégano seco",
+          "cantidad": 0.006,
+          "unidad": "kg",
+          "costo_unitario": 10000,
+          "costo_total": 60.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Pelar, cortar y cocer las papas; escurrir y prensar. Incorporar mantequilla y leche caliente de a poco; salar."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Dividir el pollo en 30 filetes y condimentar con ajo, orégano, pimienta y el resto de la sal."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Cocinar por tandas a la plancha con aceite y servir un filete con puré."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-002",
+      "nombre_ficha": "Arroz con presa de pollo al horno",
+      "tipo_preparacion": "plato_fondo",
+      "descripcion": "Una presa por persona y 100 g de arroz crudo. Verificar que los 10 kg incluyan 30 presas.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 49356.0,
+      "costo_insumos_por_porcion": 1645.2,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Arroz",
+          "cantidad": 3.0,
+          "unidad": "kg",
+          "costo_unitario": 1200,
+          "costo_total": 3600.0
+        },
+        {
+          "insumo": "Presa de pollo con hueso",
+          "cantidad": 10.0,
+          "unidad": "kg",
+          "costo_unitario": 4500,
+          "costo_total": 45000.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.15,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Ajo",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 5000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        },
+        {
+          "insumo": "Orégano seco",
+          "cantidad": 0.012,
+          "unidad": "kg",
+          "costo_unitario": 10000,
+          "costo_total": 120.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Contar y distribuir 30 presas; sazonar con ajo, orégano, aceite y sal."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Hornear las presas hasta completar la cocción."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Cocer el arroz en agua con sal y repartir con las presas."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-003",
+      "nombre_ficha": "Carne al jugo con papas cocidas",
+      "tipo_preparacion": "plato_fondo",
+      "descripcion": "200 g de vacuno crudo por comensal.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 60741.0,
+      "costo_insumos_por_porcion": 2024.7,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Posta de vacuno",
+          "cantidad": 6.0,
+          "unidad": "kg",
+          "costo_unitario": 8500,
+          "costo_total": 51000.0
+        },
+        {
+          "insumo": "Papas",
+          "cantidad": 7.0,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 7000.0
+        },
+        {
+          "insumo": "Cebolla",
+          "cantidad": 1.3,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 1300.0
+        },
+        {
+          "insumo": "Zanahoria",
+          "cantidad": 0.9,
+          "unidad": "kg",
+          "costo_unitario": 950,
+          "costo_total": 855.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.15,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Ajo",
+          "cantidad": 0.05,
+          "unidad": "kg",
+          "costo_unitario": 5000,
+          "costo_total": 250.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Sellar la carne en aceite; incorporar cebolla, zanahoria, ajo y sal."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Añadir agua y cocinar tapada hasta que esté tierna; cortar y devolver al jugo."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Pelar y cocer las papas; servir junto a la carne y su salsa."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-004",
+      "nombre_ficha": "Cerdo al orégano con arroz",
+      "tipo_preparacion": "plato_fondo",
+      "descripcion": "200 g de cerdo y 80 g de arroz crudos por persona.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 35066.0,
+      "costo_insumos_por_porcion": 1168.87,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Pulpa de cerdo",
+          "cantidad": 6.0,
+          "unidad": "kg",
+          "costo_unitario": 5200,
+          "costo_total": 31200.0
+        },
+        {
+          "insumo": "Arroz",
+          "cantidad": 2.4,
+          "unidad": "kg",
+          "costo_unitario": 1200,
+          "costo_total": 2880.0
+        },
+        {
+          "insumo": "Orégano seco",
+          "cantidad": 0.03,
+          "unidad": "kg",
+          "costo_unitario": 10000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.15,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Ajo",
+          "cantidad": 0.07,
+          "unidad": "kg",
+          "costo_unitario": 5000,
+          "costo_total": 350.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Frotar el cerdo con ajo, orégano, aceite y sal."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Asar hasta completar la cocción, reposar y cortar en láminas."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Cocer el arroz y repartir con la carne y su jugo."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-005",
+      "nombre_ficha": "Lentejas guisadas con zapallo",
+      "tipo_preparacion": "plato_fondo",
+      "descripcion": "90 g de lentejas secas por plato de fondo.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 12436.0,
+      "costo_insumos_por_porcion": 414.53,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Lentejas secas",
+          "cantidad": 2.7,
+          "unidad": "kg",
+          "costo_unitario": 2200,
+          "costo_total": 5940.0
+        },
+        {
+          "insumo": "Zapallo camote",
+          "cantidad": 2.5,
+          "unidad": "kg",
+          "costo_unitario": 1300,
+          "costo_total": 3250.0
+        },
+        {
+          "insumo": "Arroz",
+          "cantidad": 0.75,
+          "unidad": "kg",
+          "costo_unitario": 1200,
+          "costo_total": 900.0
+        },
+        {
+          "insumo": "Cebolla",
+          "cantidad": 1.0,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 1000.0
+        },
+        {
+          "insumo": "Zanahoria",
+          "cantidad": 0.8,
+          "unidad": "kg",
+          "costo_unitario": 950,
+          "costo_total": 760.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.15,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Ajo",
+          "cantidad": 0.05,
+          "unidad": "kg",
+          "costo_unitario": 5000,
+          "costo_total": 250.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Enjuagar las lentejas y comenzar la cocción en agua."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Sofreír cebolla, zanahoria y ajo en aceite; añadir a las lentejas con el zapallo en cubos."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Incorporar el arroz y la sal; terminar cuando ambos granos estén cocidos."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-006",
+      "nombre_ficha": "Espirales con salsa de pollo",
+      "tipo_preparacion": "plato_fondo",
+      "descripcion": "100 g de pasta seca y 120 g de pollo crudo por persona.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 28826.0,
+      "costo_insumos_por_porcion": 960.87,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Espirales secos",
+          "cantidad": 3.0,
+          "unidad": "kg",
+          "costo_unitario": 1800,
+          "costo_total": 5400.0
+        },
+        {
+          "insumo": "Filete de pechuga de pollo",
+          "cantidad": 3.6,
+          "unidad": "kg",
+          "costo_unitario": 4500,
+          "costo_total": 16200.0
+        },
+        {
+          "insumo": "Salsa de tomate",
+          "cantidad": 2.4,
+          "unidad": "kg",
+          "costo_unitario": 2200,
+          "costo_total": 5280.0
+        },
+        {
+          "insumo": "Cebolla",
+          "cantidad": 0.9,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 900.0
+        },
+        {
+          "insumo": "Zanahoria",
+          "cantidad": 0.6,
+          "unidad": "kg",
+          "costo_unitario": 950,
+          "costo_total": 570.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.12,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 240.0
+        },
+        {
+          "insumo": "Orégano seco",
+          "cantidad": 0.02,
+          "unidad": "kg",
+          "costo_unitario": 10000,
+          "costo_total": 200.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Picar el pollo y dorar en aceite con la cebolla y la zanahoria."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Agregar salsa y orégano; terminar la cocción y ajustar la sal."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Cocer los espirales, escurrir y servir con la salsa."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-007",
+      "nombre_ficha": "Pollo al champiñón con arroz",
+      "tipo_preparacion": "plato_fondo",
+      "descripcion": "180 g de pollo y 80 g de arroz crudos por porción.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 40756.0,
+      "costo_insumos_por_porcion": 1358.53,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Filete de pechuga de pollo",
+          "cantidad": 5.4,
+          "unidad": "kg",
+          "costo_unitario": 4500,
+          "costo_total": 24300.0
+        },
+        {
+          "insumo": "Arroz",
+          "cantidad": 2.4,
+          "unidad": "kg",
+          "costo_unitario": 1200,
+          "costo_total": 2880.0
+        },
+        {
+          "insumo": "Champiñones",
+          "cantidad": 1.5,
+          "unidad": "kg",
+          "costo_unitario": 4800,
+          "costo_total": 7200.0
+        },
+        {
+          "insumo": "Crema de leche",
+          "cantidad": 1.2,
+          "unidad": "lt",
+          "costo_unitario": 4500,
+          "costo_total": 5400.0
+        },
+        {
+          "insumo": "Cebolla",
+          "cantidad": 0.7,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 700.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.12,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 240.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Cocer el arroz en agua con parte de la sal."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Dorar el pollo en tiras; añadir la cebolla y los champiñones laminados."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Incorporar la crema, terminar de cocinar a fuego suave y servir con arroz."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-008",
+      "nombre_ficha": "Guiso de porotos con choclo",
+      "tipo_preparacion": "plato_fondo",
+      "descripcion": "90 g de porotos secos por plato.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 16606.0,
+      "costo_insumos_por_porcion": 553.53,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Porotos blancos secos",
+          "cantidad": 2.7,
+          "unidad": "kg",
+          "costo_unitario": 2800,
+          "costo_total": 7560.0
+        },
+        {
+          "insumo": "Zapallo camote",
+          "cantidad": 2.4,
+          "unidad": "kg",
+          "costo_unitario": 1300,
+          "costo_total": 3120.0
+        },
+        {
+          "insumo": "Choclo desgranado",
+          "cantidad": 1.8,
+          "unidad": "kg",
+          "costo_unitario": 2300,
+          "costo_total": 4140.0
+        },
+        {
+          "insumo": "Cebolla",
+          "cantidad": 1.0,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 1000.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.15,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Ajo",
+          "cantidad": 0.05,
+          "unidad": "kg",
+          "costo_unitario": 5000,
+          "costo_total": 250.0
+        },
+        {
+          "insumo": "Orégano seco",
+          "cantidad": 0.02,
+          "unidad": "kg",
+          "costo_unitario": 10000,
+          "costo_total": 200.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Remojar los porotos, escurrir y cocer en agua limpia hasta ablandar."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Sofreír cebolla y ajo con aceite y orégano; incorporar a la olla junto al zapallo."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Agregar el choclo y la sal; terminar cuando el zapallo espese el caldo."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-009",
+      "nombre_ficha": "Arroz primavera",
+      "tipo_preparacion": "acompanamiento",
+      "descripcion": "75 g de arroz seco por guarnición.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 5404.5,
+      "costo_insumos_por_porcion": 180.15,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Arroz",
+          "cantidad": 2.25,
+          "unidad": "kg",
+          "costo_unitario": 1200,
+          "costo_total": 2700.0
+        },
+        {
+          "insumo": "Zanahoria",
+          "cantidad": 0.75,
+          "unidad": "kg",
+          "costo_unitario": 950,
+          "costo_total": 712.5
+        },
+        {
+          "insumo": "Choclo desgranado",
+          "cantidad": 0.75,
+          "unidad": "kg",
+          "costo_unitario": 2300,
+          "costo_total": 1725.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.12,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 240.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.045,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 27.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Cortar la zanahoria en cubos pequeños y saltear en aceite."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Incorporar el arroz, agua y sal; cocinar tapado."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Añadir el choclo a tiempo para completar su cocción y soltar los granos antes de servir."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-010",
+      "nombre_ficha": "Papas doradas al orégano",
+      "tipo_preparacion": "acompanamiento",
+      "descripcion": "233 g de papa cruda con piel por guarnición.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 8116.0,
+      "costo_insumos_por_porcion": 270.53,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Papas",
+          "cantidad": 7.0,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 7000.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.24,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 480.0
+        },
+        {
+          "insumo": "Orégano seco",
+          "cantidad": 0.03,
+          "unidad": "kg",
+          "costo_unitario": 10000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Ajo",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 5000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.06,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 36.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Lavar las papas y cortar en gajos uniformes."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Mezclar con aceite, ajo, sal y orégano."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Distribuir en bandejas y hornear hasta que estén tiernas y doradas."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-011",
+      "nombre_ficha": "Puré de zapallo y papas",
+      "tipo_preparacion": "acompanamiento",
+      "descripcion": "Guarnición; distribuir el puré terminado en 30 porciones iguales.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 12050.0,
+      "costo_insumos_por_porcion": 401.67,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Zapallo camote",
+          "cantidad": 4.0,
+          "unidad": "kg",
+          "costo_unitario": 1300,
+          "costo_total": 5200.0
+        },
+        {
+          "insumo": "Papas",
+          "cantidad": 4.0,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 4000.0
+        },
+        {
+          "insumo": "Mantequilla",
+          "cantidad": 0.24,
+          "unidad": "kg",
+          "costo_unitario": 9000,
+          "costo_total": 2160.0
+        },
+        {
+          "insumo": "Leche",
+          "cantidad": 0.6,
+          "unidad": "lt",
+          "costo_unitario": 1100,
+          "costo_total": 660.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.05,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 30.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Pelar y cortar el zapallo y las papas."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Cocer hasta que estén blandos y escurrir bien."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Prensar con la mantequilla, incorporar gradualmente la leche y ajustar la sal."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-012",
+      "nombre_ficha": "Ensalada chilena",
+      "tipo_preparacion": "entrada",
+      "descripcion": "150 g de tomate crudo por entrada.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 9438.0,
+      "costo_insumos_por_porcion": 314.6,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Tomate",
+          "cantidad": 4.5,
+          "unidad": "kg",
+          "costo_unitario": 1600,
+          "costo_total": 7200.0
+        },
+        {
+          "insumo": "Cebolla",
+          "cantidad": 1.2,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 1200.0
+        },
+        {
+          "insumo": "Cilantro",
+          "cantidad": 0.12,
+          "unidad": "kg",
+          "costo_unitario": 6500,
+          "costo_total": 780.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.12,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 240.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.03,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 18.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Lavar y cortar el tomate en gajos."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Cortar la cebolla en pluma, enjuagar y escurrir."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Mezclar con cilantro picado, aceite y sal antes de servir."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-013",
+      "nombre_ficha": "Ensalada de repollo morado y zanahoria",
+      "tipo_preparacion": "entrada",
+      "descripcion": "150 g de hortalizas de compra por porción.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 6243.0,
+      "costo_insumos_por_porcion": 208.1,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Repollo morado",
+          "cantidad": 3.0,
+          "unidad": "kg",
+          "costo_unitario": 1200,
+          "costo_total": 3600.0
+        },
+        {
+          "insumo": "Zanahoria",
+          "cantidad": 1.5,
+          "unidad": "kg",
+          "costo_unitario": 950,
+          "costo_total": 1425.0
+        },
+        {
+          "insumo": "Jugo de limón",
+          "cantidad": 0.3,
+          "unidad": "lt",
+          "costo_unitario": 3000,
+          "costo_total": 900.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.15,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.03,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 18.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Retirar hojas exteriores y cortar el repollo finamente."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Pelar y rallar la zanahoria."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Mezclar con limón, aceite y sal; repartir en platos de entrada."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-014",
+      "nombre_ficha": "Ensalada de betarraga con cilantro",
+      "tipo_preparacion": "entrada",
+      "descripcion": "Ensalada fría servida en plato de entrada.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 8388.0,
+      "costo_insumos_por_porcion": 279.6,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Betarraga",
+          "cantidad": 5.0,
+          "unidad": "kg",
+          "costo_unitario": 1200,
+          "costo_total": 6000.0
+        },
+        {
+          "insumo": "Cebolla",
+          "cantidad": 0.6,
+          "unidad": "kg",
+          "costo_unitario": 1000,
+          "costo_total": 600.0
+        },
+        {
+          "insumo": "Cilantro",
+          "cantidad": 0.12,
+          "unidad": "kg",
+          "costo_unitario": 6500,
+          "costo_total": 780.0
+        },
+        {
+          "insumo": "Jugo de limón",
+          "cantidad": 0.25,
+          "unidad": "lt",
+          "costo_unitario": 3000,
+          "costo_total": 750.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.12,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 240.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.03,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 18.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Lavar y cocer las betarragas hasta que estén tiernas."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Enfriar, pelar y cortar en cubos; picar la cebolla y el cilantro."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Mezclar con jugo de limón, aceite y sal."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-015",
+      "nombre_ficha": "Ensalada de garbanzos y pepino",
+      "tipo_preparacion": "entrada",
+      "descripcion": "50 g de garbanzos secos por entrada.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 9841.0,
+      "costo_insumos_por_porcion": 328.03,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Garbanzos secos",
+          "cantidad": 1.5,
+          "unidad": "kg",
+          "costo_unitario": 2400,
+          "costo_total": 3600.0
+        },
+        {
+          "insumo": "Pepino",
+          "cantidad": 1.5,
+          "unidad": "kg",
+          "costo_unitario": 1400,
+          "costo_total": 2100.0
+        },
+        {
+          "insumo": "Tomate",
+          "cantidad": 1.5,
+          "unidad": "kg",
+          "costo_unitario": 1600,
+          "costo_total": 2400.0
+        },
+        {
+          "insumo": "Jugo de limón",
+          "cantidad": 0.3,
+          "unidad": "lt",
+          "costo_unitario": 3000,
+          "costo_total": 900.0
+        },
+        {
+          "insumo": "Aceite",
+          "cantidad": 0.15,
+          "unidad": "lt",
+          "costo_unitario": 2000,
+          "costo_total": 300.0
+        },
+        {
+          "insumo": "Cilantro",
+          "cantidad": 0.08,
+          "unidad": "kg",
+          "costo_unitario": 6500,
+          "costo_total": 520.0
+        },
+        {
+          "insumo": "Sal",
+          "cantidad": 0.035,
+          "unidad": "kg",
+          "costo_unitario": 600,
+          "costo_total": 21.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Remojar los garbanzos, escurrir, cocer en agua limpia y enfriar."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Cortar pepino y tomate en cubos; picar el cilantro."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Mezclar y aliñar con limón, aceite y sal."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-016",
+      "nombre_ficha": "Arroz con leche y canela",
+      "tipo_preparacion": "postre",
+      "descripcion": "30 pocillos; distribuir la mezcla en partes iguales.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 6882.0,
+      "costo_insumos_por_porcion": 229.4,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Arroz",
+          "cantidad": 0.75,
+          "unidad": "kg",
+          "costo_unitario": 1200,
+          "costo_total": 900.0
+        },
+        {
+          "insumo": "Leche",
+          "cantidad": 4.5,
+          "unidad": "lt",
+          "costo_unitario": 1100,
+          "costo_total": 4950.0
+        },
+        {
+          "insumo": "Azúcar",
+          "cantidad": 0.6,
+          "unidad": "kg",
+          "costo_unitario": 1300,
+          "costo_total": 780.0
+        },
+        {
+          "insumo": "Canela molida",
+          "cantidad": 0.018,
+          "unidad": "kg",
+          "costo_unitario": 14000,
+          "costo_total": 252.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Cocer el arroz con agua hasta que esté casi tierno."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Agregar la leche y el azúcar y remover hasta que la mezcla esté cremosa."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Distribuir en pocillos y espolvorear canela."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-017",
+      "nombre_ficha": "Compota de manzana y pera",
+      "tipo_preparacion": "postre",
+      "descripcion": "200 g de fruta de compra por porción.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 10523.0,
+      "costo_insumos_por_porcion": 350.77,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Manzana",
+          "cantidad": 3.0,
+          "unidad": "kg",
+          "costo_unitario": 1600,
+          "costo_total": 4800.0
+        },
+        {
+          "insumo": "Pera",
+          "cantidad": 3.0,
+          "unidad": "kg",
+          "costo_unitario": 1700,
+          "costo_total": 5100.0
+        },
+        {
+          "insumo": "Azúcar",
+          "cantidad": 0.35,
+          "unidad": "kg",
+          "costo_unitario": 1300,
+          "costo_total": 455.0
+        },
+        {
+          "insumo": "Canela molida",
+          "cantidad": 0.012,
+          "unidad": "kg",
+          "costo_unitario": 14000,
+          "costo_total": 168.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Pelar, descorazonar y trozar las frutas."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Cocer con un poco de agua, azúcar y canela hasta ablandar."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Aplastar ligeramente, enfriar y repartir en 30 pocillos."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-018",
+      "nombre_ficha": "Crumble de manzana y avena",
+      "tipo_preparacion": "postre",
+      "descripcion": "30 porciones de fruta horneada con cubierta crujiente.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 14550.0,
+      "costo_insumos_por_porcion": 485.0,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Manzana",
+          "cantidad": 4.5,
+          "unidad": "kg",
+          "costo_unitario": 1600,
+          "costo_total": 7200.0
+        },
+        {
+          "insumo": "Avena laminada",
+          "cantidad": 0.65,
+          "unidad": "kg",
+          "costo_unitario": 2200,
+          "costo_total": 1430.0
+        },
+        {
+          "insumo": "Harina de trigo",
+          "cantidad": 0.45,
+          "unidad": "kg",
+          "costo_unitario": 1100,
+          "costo_total": 495.0
+        },
+        {
+          "insumo": "Mantequilla",
+          "cantidad": 0.5,
+          "unidad": "kg",
+          "costo_unitario": 9000,
+          "costo_total": 4500.0
+        },
+        {
+          "insumo": "Azúcar",
+          "cantidad": 0.55,
+          "unidad": "kg",
+          "costo_unitario": 1300,
+          "costo_total": 715.0
+        },
+        {
+          "insumo": "Canela molida",
+          "cantidad": 0.015,
+          "unidad": "kg",
+          "costo_unitario": 14000,
+          "costo_total": 210.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Pelar y cortar las manzanas; ponerlas en bandejas con canela y parte del azúcar."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Frotar la mantequilla fría con avena, harina y azúcar restante para formar migas."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Cubrir la fruta, hornear hasta dorar y dividir en 30 porciones."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-019",
+      "nombre_ficha": "Leche asada con caramelo",
+      "tipo_preparacion": "postre",
+      "descripcion": "30 porciones individuales.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 11305.0,
+      "costo_insumos_por_porcion": 376.83,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Leche",
+          "cantidad": 4.0,
+          "unidad": "lt",
+          "costo_unitario": 1100,
+          "costo_total": 4400.0
+        },
+        {
+          "insumo": "Huevo",
+          "cantidad": 24.0,
+          "unidad": "unidades",
+          "costo_unitario": 230,
+          "costo_total": 5520.0
+        },
+        {
+          "insumo": "Azúcar",
+          "cantidad": 0.85,
+          "unidad": "kg",
+          "costo_unitario": 1300,
+          "costo_total": 1105.0
+        },
+        {
+          "insumo": "Esencia de vainilla",
+          "cantidad": 0.035,
+          "unidad": "lt",
+          "costo_unitario": 8000,
+          "costo_total": 280.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Preparar el caramelo con parte del azúcar y repartir en los moldes."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Batir los huevos con leche, vainilla y el resto del azúcar; verter sobre el caramelo."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Hornear hasta cuajar, dejar enfriar y refrigerar antes del servicio."
+        }
+      ]
+    },
+    {
+      "codigo": "FT-020",
+      "nombre_ficha": "Crema de chocolate en pocillo",
+      "tipo_preparacion": "postre",
+      "descripcion": "30 pocillos individuales.",
+      "rendimiento": 30,
+      "unidad_rendimiento": "unidades",
+      "estado": "activo",
+      "costo_total": 9091.0,
+      "costo_insumos_por_porcion": 303.03,
+      "precio_sugerido": 0,
+      "margen_objetivo": 0,
+      "receta": [
+        {
+          "insumo": "Leche",
+          "cantidad": 4.5,
+          "unidad": "lt",
+          "costo_unitario": 1100,
+          "costo_total": 4950.0
+        },
+        {
+          "insumo": "Maicena",
+          "cantidad": 0.28,
+          "unidad": "kg",
+          "costo_unitario": 3200,
+          "costo_total": 896.0
+        },
+        {
+          "insumo": "Cacao amargo",
+          "cantidad": 0.22,
+          "unidad": "kg",
+          "costo_unitario": 10000,
+          "costo_total": 2200.0
+        },
+        {
+          "insumo": "Azúcar",
+          "cantidad": 0.65,
+          "unidad": "kg",
+          "costo_unitario": 1300,
+          "costo_total": 845.0
+        },
+        {
+          "insumo": "Esencia de vainilla",
+          "cantidad": 0.025,
+          "unidad": "lt",
+          "costo_unitario": 8000,
+          "costo_total": 200.0
+        }
+      ],
+      "detalle_preparacion": [
+        {
+          "orden": 1,
+          "instruccion": "Disolver maicena y cacao en una parte de la leche fría."
+        },
+        {
+          "orden": 2,
+          "instruccion": "Calentar el resto con el azúcar, incorporar la mezcla y remover hasta que espese."
+        },
+        {
+          "orden": 3,
+          "instruccion": "Añadir vainilla, distribuir en pocillos y enfriar antes del servicio."
+        }
+      ]
+    }
+  ]
+}

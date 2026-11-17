@@ -1,0 +1,3 @@
+# Sólo necesario si se configura MICA_IA_PROVEEDOR=groq.
+# No es obligatorio para MICA en modo reglas.
+groq==1.7.0
